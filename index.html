@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="gerador de senhas, password generator, randon password">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+    <div class="container-input">
+        <img src="img/cadeado.png" alt="">
+        <h1>GERADOR DE SENHA</h1>
+        <span class="tamanho">Tamanho: <span id="valor"></span> caracteres</span>
+        <input type="range" id="slider" class="slider" min="5" max="25" value="10"/>
+
+        <button id="btnGerar" class="btnGerar">Gerar senha</button>
+    </div>
+
+        <div id="container-password" class="container-password hide">
+            <span>A senha gerada foi: </span>
+            <span id="password" class="password">00000000</span>
+            <span>Clique na senha para copiar</span>
+        </div>
+    
+
+</body>
+</html>
