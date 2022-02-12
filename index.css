@@ -21,17 +21,18 @@ h1{
     justify-content: center;
 }
 
-button{
+.button-cta{
+    height: 45px;
+    background-color: #3eb72b;
     border: none;
     border-radius: 5px;
-    box-shadow: 4px 4px 8px rgb(15, 15, 15);
+    box-shadow: 3px 6px 21px black;
     cursor: pointer;
+    margin-top: 40px;
+    color: white;
     font-weight: bolder;
     font-size: 1.1rem;
     width: 480px;
-    min-height: 6vh;
-    background-color: rgb(18, 148, 98);
-    margin: 10px;
 }
 input{
     width: 120px;
@@ -51,10 +52,12 @@ input{
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 480px;
 }
 
 .hide{
     display: none;
+    width: 480px;
 }
 
 .password{
@@ -68,8 +71,25 @@ input{
     margin: 10px;
     transition: transform 0.4s;
 }
-
 .password:hover{
     transform: scale(1.1);
     background-color: rgb(14, 15, 39);
+}
+.tooltip{
+    color: white;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background-color: rgb(15, 15, 15);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+.container-password:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
 }
